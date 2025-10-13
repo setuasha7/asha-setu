@@ -1,0 +1,58 @@
+:root{
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --accent:#2a7ae2;
+  --text:#222;
+  --muted:#666;
+  --container:1100px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:1.25rem;
+}
+
+.site-header{
+  background:linear-gradient(90deg,#fff 0%, #f9fbff 100%);
+  border-bottom:1px solid #e6ecff;
+}
+.site-header .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+}
+.brand{margin:0;font-size:1.25rem;color:var(--accent)}
+.site-nav a{
+  margin-left:0.75rem;
+  text-decoration:none;
+  color:var(--muted);
+  padding:0.45rem 0.6rem;
+  border-radius:6px;
+  transition:all .15s;
+}
+.site-nav a:hover{color:var(--text); background:#eef5ff}
+.site-nav a.active{color:var(--accent); font-weight:600; background:rgba(42,122,226,0.08)}
+
+main{padding:2rem 1.25rem}
+main h2{margin-top:0}
+section{background:var(--card); padding:1.25rem; border-radius:8px; box-shadow:0 1px 4px rgba(30,40,60,0.05); margin-bottom:1rem}
+
+.site-footer{padding:1rem 0; color:var(--muted); text-align:center; font-size:0.9rem}
+
+/* Responsive */
+@media (max-width:700px){
+  .site-header .container{flex-direction:column; align-items:flex-start}
+  .site-nav{width:100%}
+  .site-nav a{margin:0 .35rem .35rem 0}
+}

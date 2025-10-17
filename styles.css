@@ -18,6 +18,13 @@ body{
 .logo {
   height: 100px;
 }
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
 .container{
   max-width:var(--container);
   margin:0 auto;

@@ -23,45 +23,51 @@
     /* === GENERAL STYLE === */
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
-      background-color: #4169E1; /* soft light green */
-      color: #819beb;
+      background-color: #142C60; /* royal blue */
+      color: #FFD700; /* gold */
       margin: 0;
       padding: 0;
       line-height: 1.6;
     }
 
     header {
-      background-color: #4169E1; /* slightly deeper green for contrast */
-      color: #efbf04;
+      background-color: #142C60; /* royal blue */
+      color: #FFD700; /* gold */
       text-align: center;
       padding: 2.5rem 1rem;
-      border-bottom: 0px solid #88cc87;
+      border-bottom: 0px solid #FFD700;
     }
 
     header h1 {
       font-size: 2rem;
       margin: 0;
       letter-spacing: 1px;
+      color: #FFD700; /* gold */
+    }
+
+    header h2 {
+      color: #ffe066; /* lighter gold for secondary heading */
     }
 
     header p {
       font-style: italic;
-      color: #324a32;
+      color: #FFD700;
       margin-top: 0.5rem;
     }
 
     main {
       max-width: 900px;
       margin: 2rem auto;
-      background: #f5f9f6;
+      background: #203980; /* lighter royal blue */
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       padding: 2rem;
+      color: #FFD700; /* gold */
     }
 
     h2 {
-      color: #234023;
-      border-bottom: 2px solid #a4e39f;
+      color: #FFD700; /* gold */
+      border-bottom: 2px solid #FFD700;
       padding-bottom: 0.3rem;
     }
 
@@ -74,31 +80,46 @@
     }
 
     .details {
-      background: #e7fae4;
+      background: #2350a3; /* slightly lighter royal blue */
       padding: 1rem;
       border-radius: 10px;
+      color: #FFD700;
     }
 
     footer {
       text-align: center;
       padding: 1rem;
-      background: #a4e39f;
+      background: #142C60; /* royal blue */
       font-size: 0.9rem;
-      border-top: 3px solid #88cc87;
+      border-top: 3px solid #FFD700;
+      color: #FFD700;
     }
 
     .btn {
       display: inline-block;
-      background-color: #6bc66b;
-      color: white;
+      background-color: #FFD700; /* gold */
+      color: #142C60; /* royal blue */
       text-decoration: none;
       padding: 0.6rem 1.2rem;
       border-radius: 8px;
-      transition: background 0.2s;
+      font-weight: bold;
+      transition: background 0.2s, color 0.2s;
+      border: none;
     }
 
     .btn:hover {
-      background-color: #58b558;
+      background-color: #ffe066; /* lighter gold on hover */
+      color: #142C60;
+    }
+
+    a, .nav-link {
+      color: #FFD700;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover, .nav-link:hover {
+      color: #ffe066; /* lighter gold */
     }
   </style>
 
@@ -116,7 +137,7 @@
         Together, we’re using compassion and technology to make a real difference.
       </p>
       <p>
-        Our core belief is that small, well-focused interventions — when executed with local collaboration — create lasting change. We aim to build bridges (Setu) for hope (Asha) across communities.
+        Our core belief is that small, well-focused interventions — when executed with local collaboration — create lasting change. We aim to build bridges (Setu) for hope (Asha) across communities
       </p>
     </section>
     <section id="objectives">

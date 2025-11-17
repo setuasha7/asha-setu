@@ -24,7 +24,7 @@
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       background-color: #142C60; /* royal blue */
-      color: #FFD700; /* gold */
+      color: #000000; /* black text */
       margin: 0;
       padding: 0;
       line-height: 1.6;
@@ -53,6 +53,9 @@
       font-style: italic;
       color: #FFD700;
       margin-top: 0.5rem;
+      border-bottom: 3px solid #142C60; /* royal blue underline */
+      display: inline-block;
+      padding-bottom: 0.2rem;
     }
 
     main {
@@ -62,28 +65,40 @@
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       padding: 2rem;
-      color: #FFD700; /* gold */
+      color: #000000; /* black text */
+    }
+
+    section {
+      background: #fff; /* section box to white */
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
 
     h2 {
-      color: #FFD700; /* gold */
-      border-bottom: 2px solid #FFD700;
+      color: #000000; /* black heading text */
+      border-bottom: 3px solid #FFD700; /* gold underline by default */
       padding-bottom: 0.3rem;
+    }
+
+    h2 + p {
+      border-bottom: 3px solid #142C60 !important; /* royal blue underline */
+      color: #000000 !important; /* ensure paragraph is black */
+      display: inline-block;
+      padding-bottom: 0.3rem;
+      font-weight: bold;
     }
 
     ul {
       margin-left: 1.5rem;
     }
 
-    section {
-      margin-bottom: 2rem;
-    }
-
     .details {
       background: #2350a3; /* slightly lighter royal blue */
       padding: 1rem;
       border-radius: 10px;
-      color: #FFD700;
+      color: #000000; /* black text */
     }
 
     footer {
@@ -127,17 +142,21 @@
     <section id="about">
       <h2>Get To Know Us</h2>
       <p>
-        We are a student-led initiative dedicated to spreading kindness and supporting underprivileged communities through meaningful action. Our project organizes a donation drive that collects gently used clothes from students, repairs them if needed, and distributes them to those in need before the winter season.
+        We are a student-led initiative dedicated to spreading kindness and supporting underprivileged communities through meaningful action. 
+        Our project organizes a donation drive that collects gently used clothes from students, repairs them if needed, and distributes them to those 
+        in need before the winter season.
       <p>
         In addition to clothing, we raise cash donations to purchase essential items for a local orphanage—ensuring broader impact and care.
       </p>
         <p>
-        To make giving easier and more accessible, we’ve integrated Artificial Intelligence into our mission. Our website and chatbot help spread awareness, share important information, and guide donors through a simple, seamless donation process.
+        To make giving easier and more accessible, we’ve integrated Artificial Intelligence into our mission. Our website and chatbot help spread awareness, 
+          share important information, and guide donors through a simple, seamless donation process.
           </p>
         Together, we’re using compassion and technology to make a real difference.
       </p>
       <p>
-        Our core belief is that small, well-focused interventions — when executed with local collaboration — create lasting change. We aim to build bridges (Setu) for hope (Asha) across communities
+        Our core belief is that small, well-focused interventions — when executed with local collaboration — create lasting change. We aim to build bridges (Setu) 
+        for hope (Asha) across communities
       </p>
     </section>
     <section id="objectives">
@@ -152,7 +171,8 @@
     <section id="mission">
       <h2>Our Mission</h2>
       <p>
-        To inspire compassion and community involvement by supporting underprivileged individuals through clothing and essential item donations while using technology to make giving more accessible, efficient, and impactful.
+        To inspire compassion and community involvement by supporting underprivileged individuals through clothing and essential item donations while using 
+        technology to make giving more accessible, efficient, and impactful.
       </p>
     </section>
 

@@ -134,6 +134,33 @@
     a:hover, .nav-link:hover {
       color: #ffe066; /* lighter gold */
     }
+
+    /* === Member images sized to 20px === */
+    .member img {
+      width: 20px;
+      height: 20px;
+      object-fit: cover;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 4px; /* optional: small rounding */
+    }
+
+    /* Optional: ensure member layout still looks reasonable when images are small */
+    .member {
+      margin-bottom: 1rem;
+    }
+    .member h4 {
+      margin: 0.2rem 0 0.1rem 0;
+      display: inline-block;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+    .member .role {
+      display: block;
+      font-size: 0.9rem;
+      color: #333;
+      margin-left: 0.5rem;
+    }
   </style>
 
   <main id="main-content" class="container" role="main">

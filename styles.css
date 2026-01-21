@@ -67,16 +67,8 @@ a {
 
 .team-placeholders {
   display: flex;
-  flex-direction: row;   /* THIS is important */
   justify-content: center;
   align-items: flex-start;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.team-placeholders {
-  
-  display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
   margin-top: 1rem;

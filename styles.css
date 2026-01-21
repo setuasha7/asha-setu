@@ -1,120 +1,44 @@
-:root{
-  --bg:#f7f8fb;
-  --card:#ffffff;
-  --accent:#2a7ae2;
-  --text:#222;
-  --muted:#666;
-  --container:1100px;
+/* === HEADER FIX === */
+
+.site-header {
+  background: linear-gradient(90deg, #fff 0%, #f9fbff 100%);
+  border-bottom: 1px solid #e6ecff;
 }
 
-*{box-sizing:border-box}
-body{
-  margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, cursive;
-  font-size: 13px;
-  background-color: black;
-  color: var(--text);
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-
-.container{
-  max-width:var(--container);
-  margin:0 auto;
-  padding:1.25rem;
-}
-
-.logo {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-}
-
-header {
-  padding: 0.8rem 1rem;
-}
-
-.site-header{
-  background:linear-gradient(90deg,#fff 0%, #f9fbff 100%);
-  border-bottom:1px solid #e6ecff;
-}
-.site-header .container{
-  padding:0.6rem 1.25rem;
-}
-
-header h2 {
-  margin: 0.3rem 0 0.6rem;
-  font-size: 0.95rem;
-  font-weight: 400;
-}
-
-.brand{margin:0;font-size:1.25rem;color:var(--accent)}
-.site-nav a{
-  margin-left:0.75rem;
-  text-decoration:none;
-  color:var(--muted);
-  padding:0.3rem 0.6rem;
-  border-radius:6px;
-  transition:all .15s;
-}
-.site-nav a:hover{color:var(--text); background:#eef5ff}
-.site-nav a.active{color:var(--accent); font-weight:600; background:rgba(42,122,226,0.08)}
-
-main{padding:2rem 1.25rem}
-main h2{margin-top:0}
-section{background:var(--card); padding:1.25rem; border-radius:8px; box-shadow:0 1px 4px rgba(30,40,60,0.05); margin-bottom:1rem}
-
-.site-footer{padding:1rem 0; color:var(--muted); text-align:center; font-size:0.9rem}
-
-/* Responsive */
-@media (max-width:700px){
-  .site-header .container{flex-direction:column; align-items:flex-start}
-  .site-nav{width:100%}
-  .site-nav a{margin:0 .35rem .35rem 0}
-}
-a {
-  pointer-events: auto;
-  cursor: pointer;
-  color: #0b6b3a;
-  text-decoration: underline;
-}
-
-.team-placeholders {
+.site-header .container {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 1rem;   /* THIS is the height controller */
 }
 
-.member {
-  text-align: center;
-  width: 220px;
-  flex: 0 0 220px;
+/* Logo */
+.site-header .logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
-.member img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
+/* Text group */
+.site-header h1,
+.site-header h2 {
+  margin: 0;
+  line-height: 1.2;
 }
 
-.member h4 {
-  margin: 0.6rem 0 0.2rem;
+.site-header h1 {
+  font-size: 1.1rem;
 }
 
-.member .role {
-  font-size: 0.85rem;
-  color: #555;
+.site-header h2 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.8;
 }
 
-.member .bio {
-  margin-top: 0.5rem;
-  font-size: 0.85rem;
-  line-height: 1.4;
-  color: #333;
+/* Stack logo + text neatly */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }

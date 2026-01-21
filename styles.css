@@ -29,17 +29,15 @@ body{
   border-bottom:1px solid #e6ecff;
 }
 .site-header .container{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:1rem;
+  padding:0.6rem 1.25rem;
 }
+
 .brand{margin:0;font-size:1.25rem;color:var(--accent)}
 .site-nav a{
   margin-left:0.75rem;
   text-decoration:none;
   color:var(--muted);
-  padding:0.45rem 0.6rem;
+  padding:0.3rem 0.6rem;
   border-radius:6px;
   transition:all .15s;
 }

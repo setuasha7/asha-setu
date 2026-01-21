@@ -71,3 +71,12 @@
   align-items: center;
   gap: 0.6rem;
 }
+
+.team-placeholders {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}

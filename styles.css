@@ -1,36 +1,39 @@
 /* === HEADER FIX === */
 
 .site-header {
-  background: linear-gradient(90deg,#fff 0%, #f9fbff 100%);
+  background: linear-gradient(90deg, #fff 0%, #f9fbff 100%);
   border-bottom: 1px solid #e6ecff;
-  padding: 1.2rem 0;   /* more vertical space for balance */
+  padding: 2rem 1rem;  /* more vertical space for breathing room */
 }
 
 .site-header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;   /* ensures mobile doesn’t break */
   padding: 1rem 1.25rem;
+  gap: 1rem;        /* space between logo & texts */
 }
 
 .site-header .logo {
-  width: 80px;   /* slightly larger, prominent but not huge */
-  height: 80px;
+  width: 120px;   /* bigger logo */
+  height: 120px;
 }
 
 .site-header h1 {
-  font-size: 1.8rem;   /* bigger, headline-worthy */
-  margin: 0 1rem;
+  font-size: 2.2rem;   /* bigger headline */
+  margin: 0;
   color: var(--accent);
 }
 
 .site-header h2 {
-  font-size: 1.1rem;    /* slightly larger slogan */
+  font-size: 1.3rem;   /* larger slogan */
   font-weight: 500;
-  margin: 0;
+  margin: 0.3rem 0 0 0;
   opacity: 0.95;
   color: #555;
 }
+
 
 /* Optional: better spacing between logo and text */
 .site-header .container > img + h1 {

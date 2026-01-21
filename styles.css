@@ -9,8 +9,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.4rem 1rem;   /* THIS is the height controller */
+  padding: 1rem 1.25rem;   /* slightly taller */
 }
+
+.site-header .logo {
+  width: 60px;   /* bigger but not insane */
+  height: 60px;
+}
+
+.site-header h1 {
+  font-size: 1.5rem;   /* noticeable, but not billboard */
+}
+
+.site-header h2 {
+  font-size: 1rem;      /* readable slogan */
+  font-weight: 500;
+  opacity: 0.9;
+}
+
 
 /* Logo */
 .site-header .logo {

@@ -89,7 +89,9 @@ a {
 .member {
   text-align: center;
   max-width: 220px;
+  flex: 0 0 auto;
 }
+
 
 .member img {
   width: 80px;

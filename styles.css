@@ -24,12 +24,30 @@ body{
   padding:1.25rem;
 }
 
+.logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+header {
+  padding: 0.8rem 1rem;
+}
+
 .site-header{
   background:linear-gradient(90deg,#fff 0%, #f9fbff 100%);
   border-bottom:1px solid #e6ecff;
 }
 .site-header .container{
   padding:0.6rem 1.25rem;
+}
+
+header h2 {
+  margin: 0.3rem 0 0.6rem;
+  font-size: 0.95rem;
+  font-weight: 400;
 }
 
 .brand{margin:0;font-size:1.25rem;color:var(--accent)}
